@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>flip-lab — Curated Jackets</title>
+  <meta
+    name="description"
+    content="flip-lab — curated, inspected, cleaned, one-of-one jackets."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT -->
+  <div class="announcement">
+    ONE-OF-ONE FINDS · NEW PIECES ADDED REGULARLY
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="#top" class="logo">flip-lab</a>
+
+    <nav class="main-nav">
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+    </nav>
+
+    <button class="bag-button" id="openCart">
+      BAG <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FLIP-LAB / CURATED OUTERWEAR</p>
+
+        <h1>
+          Good jackets<br />
+          deserve another life.
+        </h1>
+
+        <p class="hero-text">
+          Carefully sourced, inspected, cleaned, and given another chance
+          to be worn.
+        </p>
+
+        <a href="#shop" class="primary-button">
+          Explore the collection
+        </a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <span>CURRENT DROP</span>
+          <span>01/06</span>
+        </div>
+
+        <div class="hero-card-center">
+          <span>flip-lab</span>
+          <strong>ONE<br />OF<br />ONE</strong>
+        </div>
+
+        <div class="hero-card-bottom">
+          <span>CURATED</span>
+          <span>INSPECTED</span>
+          <span>CLEANED</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>CURATED</span>
+        <span>INSPECTED</span>
+        <span>CLEANED</span>
+        <span>ONE-OF-ONE</span>
+        <span>CURATED</span>
+        <span>INSPECTED</span>
+        <span>CLEANED</span>
+        <span>ONE-OF-ONE</span>
+      </div>
+    </div>
+
+    <!-- SHOP -->
+    <section class="shop section" id="shop">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>Available jackets</h2>
+        </div>
+
+        <p class="section-note">
+          Every piece is limited to one.
+        </p>
+      </div>
+
+      <div class="shop-controls">
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">
+            All
+          </button>
+
+          <button class="filter" data-filter="denim">
+            Denim
+          </button>
+
+          <button class="filter" data-filter="bomber">
+            Bomber
+          </button>
+
+          <button class="filter" data-filter="workwear">
+            Workwear
+          </button>
+
+          <button class="filter" data-filter="windbreaker">
+            Windbreaker
+          </button>
+        </div>
+
+        <select id="sortSelect" class="sort-select">
+          <option value="featured">Featured</option>
+          <option value="low">Price Low</option>
+          <option value="high">Price High</option>
+          <option value="newest">Newest</option>
+        </select>
+
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+      <div class="about-label">
+        <p class="eyebrow">ABOUT FLIP-LAB</p>
+      </div>
+
+      <div class="about-content">
+        <h2>
+          Not fast fashion.<br />
+          Not a thrift pile.
+        </h2>
+
+        <p>
+          flip-lab exists somewhere in between.
+        </p>
+
+        <p>
+          We search for jackets with character, inspect them for wear,
+          clean them properly, and put them back into circulation.
+        </p>
+
+        <p>
+          Some are old. Some are forgotten. Some simply deserve another
+          owner.
+        </p>
+
+        <p class="about-highlight">
+          The goal is simple: find something worth keeping.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process section" id="process">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE FLIP-LAB PROCESS</p>
+          <h2>Four steps.</h2>
+        </div>
+      </div>
+
+      <div class="process-grid">
+
+        <article class="process-item">
+          <span>01</span>
+          <h3>Hunt</h3>
+          <p>
+            We search through secondhand sources for pieces with
+            potential.
+          </p>
+        </article>
+
+        <article class="process-item">
+          <span>02</span>
+          <h3>Check</h3>
+          <p>
+            Each jacket is inspected for condition, construction,
+            damage, sizing, and overall character.
+          </p>
+        </article>
+
+        <article class="process-item">
+          <span>03</span>
+          <h3>Flip</h3>
+          <p>
+            Pieces are cleaned, prepared, photographed, and listed.
+          </p>
+        </article>
+
+        <article class="process-item">
+          <span>04</span>
+          <h3>Pass It On</h3>
+          <p>
+            One jacket leaves the collection and begins another life
+            with someone else.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-main">
+      <div>
+        <div class="footer-logo">flip-lab</div>
+
+        <p>
+          Curated jackets.<br />
+          One piece at a time.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> flip-lab</span>
+      <span>ALL RIGHTS RESERVED</span>
+    </div>
+
+  </footer>
+
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- CART -->
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">YOUR BAG</p>
+        <h2>Selected pieces</h2>
+      </div>
+
+      <button class="close-button" id="closeCart">
+        ×
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">₱0</strong>
+      </div>
+
+      <button class="checkout-button" id="checkoutButton">
+        Request to Buy
+      </button>
+
+      <p class="checkout-note">
+        You'll be redirected to contact flip-lab to confirm availability
+        and payment.
+      </p>
+
+    </div>
+
+  </aside>
+
+  <!-- PRODUCT MODAL -->
+  <dialog class="product-modal" id="productModal">
+
+    <button class="modal-close" id="closeModal">
+      ×
+    </button>
+
+    <div class="modal-content" id="modalContent"></div>
+
+  </dialog>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+
+</body>
+  </html>
